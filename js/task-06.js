@@ -3,7 +3,7 @@ const maxSym = textInput.dataset.length
 
 
 
-function addClass() {
+function checkLength() {
     if (this.selectionEnd >= maxSym)
         {this.classList.add("valid")
       if (this.classList.contains("invalid")) this.classList.remove("invalid")}
@@ -12,4 +12,4 @@ function addClass() {
         if (this.classList.contains("valid")) this.classList.remove("valid")}
 }
 
-textInput.addEventListener("blur", addClass )
+textInput.addEventListener("blur", checkLength )
