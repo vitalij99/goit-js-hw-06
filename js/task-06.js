@@ -1,10 +1,10 @@
 const textInput = document.getElementById("validation-input")
-const maxSym = textInput.dataset.length
+
 
 
 
 function checkLength() {
-    if (this.selectionEnd >= maxSym)
+    if (this.selectionEnd === Number(textInput.dataset.length))
         {this.classList.add("valid")
       if (this.classList.contains("invalid")) this.classList.remove("invalid")}
         

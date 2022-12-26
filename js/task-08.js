@@ -12,8 +12,8 @@ function onSubmit(event) {
     return alert("Всі поля повинні бути заповнені");
   }
   else {    
-    console.log("email :" + email.value)
-    console.log("password :" + password.value)
+    console.log({ email: email.value, password: password.value })
+    
     event.currentTarget.reset()
   }          
 }
